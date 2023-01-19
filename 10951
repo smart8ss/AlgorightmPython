@@ -1,0 +1,17 @@
+import sys
+
+
+while True :
+    a, b = map(int, input().split())
+    print(a+b)
+    
+#--------------------
+#EOF end of file? 
+# 더이상 입력되지 않으면 끝나도록 구성
+try :
+  a,b = map(int, input().split() )
+except :
+  break;
+print(a+b)
+
+#try구문 안에 오류가 발생할 만한 문장을 작성하고, except는 오류 발생 시 실행시킬 묹ㅇ
