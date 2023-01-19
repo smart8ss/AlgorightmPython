@@ -1,0 +1,17 @@
+a, b, c = map(int, input().split())
+
+if a == b == c :
+    prize = 10000 + a *1000
+elif a == b != c or a == c != b :
+    prize = 1000 + a * 100
+elif a!=b == c :
+    prize = 1000 + b *100 
+elif a!= b!= c :
+    max = 0
+    for i in (a,b,c) :
+        if i > max :
+            max = i
+    
+    prize = max*100
+    
+print(prize)
