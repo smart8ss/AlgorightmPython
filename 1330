@@ -6,3 +6,10 @@ if a< b :
     print("<")
 if a==b :
     print("==")
+    
+    
+ #3중 if문
+ #조건식1이참일때 if 조건식1 else 조건식2가참일때값 if 조건식2 else 조건식이 모두 거짓일 때
+ 
+ 
+print(">") if a>b else print("<") if b>a else print("==")
