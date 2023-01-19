@@ -15,3 +15,35 @@ print(a*tmp)
 
 #6 
 print(a*b)
+
+
+
+
+#so useless!!! 
+#input b as string, and work from index
+
+a = int(input())
+b= input()
+
+
+tmp = int(b[2])
+b2 = tmp*a
+
+#4
+tmp = int(b[1])
+b1 = tmp*a
+
+
+#5
+tmp = int(b[0])
+b0 = tmp*a
+#6 
+tmp=int(b)
+b = tmp*a
+
+print(b2, b1, b0, b)
+
+
+# but!!
+#중간 중간에 print() 가 많으면 runtimeError가 발생하더라!! 
+#조심조심! 
