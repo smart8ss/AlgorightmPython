@@ -17,3 +17,34 @@ else :
     hour = hour + time_hour
     
 print(hour, min)
+
+##########################################################################33 
+hour , min = map(int, input().split())
+time = int(input())
+
+#걸리는 분 // 60 시간
+# 걸리는 분 % 60 분 
+time_hour = time // 60 
+time_min = time % 60
+
+
+if min + time_min >= 60 :
+    #80분이 나왔으면 a는 1시간
+    a = (min + time_min) // 60
+    
+    #80분이 나왔으면 b는 20분 
+    b = (min + time_min) % 60
+    
+    hour = hour + time_hour + a
+    min = b
+    if hour>23 :
+        hour = hour-24
+else :
+    min = min + time_min
+    hour = hour + time_hour
+    if hour > 23 :
+        hour = hour - 24
+    
+print(hour, min)
+
+
