@@ -1,0 +1,17 @@
+a = int(input())
+b = int(input())
+
+#3
+tmp = b%10
+print(a*tmp)
+
+#4 
+tmp = ((b//10)%10)
+print(a*tmp)
+
+#5
+tmp = b//100
+print(a*tmp)
+
+#6 
+print(a*b)
