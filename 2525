@@ -1,0 +1,19 @@
+hour , min = map(int, input().split())
+time = int(input())
+
+time_hour = time // 60 
+time_min = time % 60
+
+
+if min + time_min >= 60 :
+    a = (min + time_min) % 60
+    b = (min + time_min) // 60
+    hour = hour + time_hour + b
+    min = a
+    if hour>23 :
+        hour = hour-24
+else :
+    min = min+time_min
+    hour = hour + time_hour
+    
+print(hour, min)
