@@ -1,0 +1,9 @@
+a, b = map(int, input().split())
+print(a+b)
+
+#other possible solutions 2
+A, B = input().split()
+x = (int)A 
+y = (int )B
+print(x+y)
+
